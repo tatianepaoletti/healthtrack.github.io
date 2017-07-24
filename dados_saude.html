@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cadastro</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		 <script src="js/jquery-3.2.1.min.js"></script>
+  	<script src="js/jquery.validate.min.js"></script>
+
+</head>
+<body>
+
+<div id="navegacao">
+			<div id="area">
+				<h1 id="logo"><span class="verde">Health</span>Track</h1>
+				<div id="menu">
+				</div>
+			</div>
+		</div>
+		<div id="area-principal">
+<br><br>
+
+<img src="img/logo.png">
+<h2>Dados de Saúde</h2><br>
+
+	<div class="row">
+    <div class="col-sm-12">
+
+<form class="dadossaude" id="dados_saude" method="post" action="dashboard.html">
+	
+	<label for="peso">Peso</label><br>
+	<input type="text" required placeholder="kg"><br><br>
+	
+	<label for="altura">Altura</label><br>
+	<input type="text" required placeholder="metros"><br><br>
+	
+	<label for="pressao">Pressão Arterial</label><br>
+	<input type="text" required placeholder="mmHg"><br><br>
+
+	<input type="submit" class="btn" value="Confirmar"><br><br>
+</form>
+<script>
+$("#dadossaude").validate();
+</script>
+
+</body>
+</html>

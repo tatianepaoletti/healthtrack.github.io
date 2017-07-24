@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adicionar Novo Peso</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		 <script src="js/jquery-3.2.1.min.js"></script>
+  	     <script src="js/jquery.validate.min.js"></script>
+</head>
+<body>
+
+<div id="navegacao">
+			<div id="area">
+				<h1 id="logo"><span class="verde">Health</span>Track</h1>
+				<div id="menu">
+					<a href="dashboard.html">Dashboard</a>
+					<a href="painel_registros.html">Novo Registro</a>
+					<a href="minha_conta.html">Minha conta</a>
+					
+				</div>
+			</div>
+		</div>
+		<div id="area-principal">
+<br><br><br><br>
+
+
+<img src="img/peso.png">
+<h2>Adicionar Novo Peso</h2><br><br>
+
+	<div class="row">
+    <div class="col-sm-12">
+
+<form class="adicionarpeso" id="adicionarpeso" method="post" action="dashboard.html">
+	
+	<label for="data">Data</label><br>
+	<input type="text" placeholder required="00/00/0000"><br>
+
+	<label for="peso">Peso</label><br>
+	<input type="text" placeholder required="kg"><br><br>
+
+	<input type="submit" class="btn btn-primary" value="Confirmar"><br><br>
+</form>
+<script>
+$("#adicionarpeso").validate();
+</script>
+</body>
+</html>
